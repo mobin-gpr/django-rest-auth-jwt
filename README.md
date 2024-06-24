@@ -5,26 +5,26 @@ Since I saw that many back-end developers have problems with the authentication 
 
  ## Endpoints
 
-- register
-- confirm email
-- resend confirm email
-- change password
-- reset password
-- set password
-- profile
+- Register
+- Confirm email
+- Resend confirm email
+- Change password
+- Reset password
+- Set password
+- Profile
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-git clone https://github.com/mobin-gpr/fox-web-api.git
+git clone https://github.com/mobin-gpr/django-rest-auth-jwt.git
 ```
 
 Go to the project directory
 
 ```bash
-cd fox-web-api
+cd django-rest-auth-jwt
 ```
 
 Run
