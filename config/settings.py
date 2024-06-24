@@ -38,9 +38,10 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # Internal apps
-    "accounts",
+    "accounts.apps.AccountsConfig",
     # External apps
     "rest_framework",
+    "drf_yasg",
 ]
 
 MIDDLEWARE = [
@@ -102,6 +103,11 @@ AUTH_PASSWORD_VALIDATORS = [
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
+
+
+# Custom User Model
+
+AUTH_USER_MODEL = "accounts.User"
 
 
 # Internationalization

@@ -1,4 +1,10 @@
 from django.urls import path
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+    TokenVerifyView,
+)
+
 from .views import (
     RegisterAPIView,
     EmailVerificationAPIView,
@@ -39,4 +45,8 @@ urlpatterns = [
         name="set_password",
     ),  # Set user password after reset password endpoint
     path("profile/", ProfileAPIView.as_view(), name="profile"),  # User profile endpoint
+    # JWT endpoints
+    path("jwt/token/", TokenObtainPairView.as_view(), name="get_token"),
+    path("jwt/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
+    path("jwt/token/verify/", TokenVerifyView.as_view(), name="token_verify"),
 ]
