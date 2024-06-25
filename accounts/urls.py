@@ -3,6 +3,7 @@ from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
     TokenVerifyView,
+    TokenBlacklistView
 )
 
 from .views import (
@@ -49,4 +50,5 @@ urlpatterns = [
     path("jwt/token/", TokenObtainPairView.as_view(), name="get_token"),
     path("jwt/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     path("jwt/token/verify/", TokenVerifyView.as_view(), name="token_verify"),
+    path('jwt/token/blacklist/', TokenBlacklistView.as_view(), name='token_blacklist'),
 ]
