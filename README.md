@@ -33,10 +33,19 @@ Run
 python manage.py runserver
 ```
 
+## Hints:
+- The user model is custom made, the username field has been removed from it and the email field has been set in its place.
+- If you do not personalize the user model according to the project, problems may arise and you will have to make changes in your code.
+- django.core.mail.backends.console.EmailBackend is used for EMAIL_BACKEND so emails are printed in the terminal.
+- Validation tokens that are sent to the user via email are jwt tokens that are not stored in the database, so they have high security and better efficiency.
+- You can change the expiration date of access and refresh tokens in the settings.py (SIMPLE_JWT).
+
+
 ## API Document
 
-- http://localhost:8000/swagger/
-- http://localhost:8000/redoc/
+- http://domain/swagger/
+- http://domain/redoc/
+
 
 ## License
 

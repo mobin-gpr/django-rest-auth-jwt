@@ -24,7 +24,7 @@ from drf_yasg import openapi
 # API documenting configs
 schema_view = get_schema_view(
     openapi.Info(
-        title="drf-auth-jwt",
+        title="django-rest-auth-jwt",
         default_version="v1",
         description="This project has been implemented to familiarize developers with the authentication system in DRF.",
         terms_of_service="https://www.google.com/policies/terms/",
